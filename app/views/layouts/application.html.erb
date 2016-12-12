@@ -9,7 +9,40 @@
 </head>
 <body>
 
-<%= yield %>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+<%= render 'shared/nav' %>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">All Ideas</a></li>
+        <li><a href="#">Inspire Me</a></li>
+        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class = "glyphicon glyphicon-user"><span class="caret"></span></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Setting</a></li>
+            <li><a href="#">Sign In</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Sign Up</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id = "wrap">
+    
+    <div class = "container">
+    <%= yield %>
+    </div>
+    
+  </div><!-- wrap -->
+
+<%= render 'shared/footer' %>
 
 </body>
 </html>
