@@ -1,0 +1,2 @@
+module RandomPagesHelper
+end
